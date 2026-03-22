@@ -5,7 +5,9 @@ async function page() {
   
     async function getData(){
         const randNum = Math.ceil(Math.random() * 100)
-        const resp = await fetch(`https://dummyjson.com/products/${randNum}`)
+        const resp = await fetch(`https://dummyjson.com/products/${randNum}`, {
+            cache: "no-store"
+        })
         const dados = await resp.json()
         return dados
     }
