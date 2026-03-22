@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./styles/style.scss";
-import Links from "./comps/links"
+import "./_styles/style.scss";
+import Links from "./_comps/links"
 
 export const metadata: Metadata = {
   title: "Create Next App",
