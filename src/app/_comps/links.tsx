@@ -6,6 +6,7 @@ function liinks() {
         <li><a href="./rota3">Pagina 3</a></li>
         <li><a href="./rota4">Pagina 4</a></li>
         <li><a href="./rota5">Pagina 5</a></li>
+        <li><a href="./rota6">Pagina 6</a></li>
     </ul>
   )
 }

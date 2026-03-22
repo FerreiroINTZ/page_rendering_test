@@ -1,11 +1,10 @@
+export const dynamic = 'force-dynamic'
+
 async function page() {
   
     async function getData(){
         const randNum = Math.ceil(Math.random() * 100)
-        const resp = await fetch(`https://dummyjson.com/products/${randNum}`, {
-            // re-builda a pagina apos o tempo expecificado
-            next: {revalidate: 60}
-        })
+        const resp = await fetch(`https://dummyjson.com/products/${randNum}`)
         const dados = await resp.json()
         return dados
     }
@@ -13,10 +12,10 @@ async function page() {
     console.log(data.title)
   
     return (
-        <>
-           <h1>{data.title}</h1>
-           <p>Routa 3</p>
-        </>
+      <>
+        <h1>{data.title}</h1>
+        <p>Routa 5</p>
+      </>
   )
 }
 

@@ -14,7 +14,10 @@ async function page() {
     console.log(data.title)
   
     return (
-    <h1>{data.title}</h1>
+        <>
+          <h1>{data.title}</h1>
+          <p>Routa 4</p>
+        </>
   )
 }
 
