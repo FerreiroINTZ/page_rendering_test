@@ -5,7 +5,7 @@ async function page() {
         const resp = await fetch(`https://dummyjson.com/products/${randNum}`, {
             // por padrao a pagina sera SSG
             // isso obriga a ser SSR
-            next: {revalidate: 60}
+            cache: "no-store"
         })
         const dados = await resp.json()
         return dados
