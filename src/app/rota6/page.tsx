@@ -1,6 +1,6 @@
+const randNum = Math.ceil(Math.random() * 100)
 async function page() {
 
-  const randNum = Math.ceil(Math.random() * 100)
   const req = await fetch(`https://dummyjson.com/products/${randNum}`, {
     next: {tags: ["product"]}
   })
